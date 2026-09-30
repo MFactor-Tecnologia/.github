@@ -1,6 +1,6 @@
-// Gera as imagens do README (assets/*.png) a partir de scripts/cards.html.
+// Gera as imagens do README (profile/assets/*.png) a partir de scripts/cards.html.
 //
-// Cada elemento com data-out vira assets/<data-out>.png, recortado no próprio
+// Cada elemento com data-out vira profile/assets/<data-out>.png, recortado no próprio
 // elemento e com fundo transparente, para os cantos arredondados funcionarem
 // no tema claro e no escuro do GitHub. Renderiza em 2x para ficar nítido em
 // telas de alta densidade.
@@ -18,7 +18,9 @@ import { mkdir } from "node:fs/promises";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const source = pathToFileURL(join(here, "cards.html")).href;
-const outDir = join(here, "..", "assets");
+// Dentro de profile/: no perfil da organização o GitHub resolve os caminhos
+// relativos a partir dessa pasta e ignora "../".
+const outDir = join(here, "..", "profile", "assets");
 
 await mkdir(outDir, { recursive: true });
 
@@ -56,7 +58,7 @@ for (const el of await page.locator("[data-out]").all()) {
   const { size } = await sharp(raw)
     .png({ palette: true, quality: 95, dither: 1, effort: 10, compressionLevel: 9 })
     .toFile(out);
-  console.log(`  assets/${name}.png  ${Math.round(size / 1024)} KB`);
+  console.log(`  profile/assets/${name}.png  ${Math.round(size / 1024)} KB`);
 }
 
 await browser.close();
