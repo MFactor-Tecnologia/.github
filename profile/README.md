@@ -96,8 +96,10 @@ Projetos entregues em saúde, varejo, agro, indústria e educação — platafor
 | **Livin** | Marketplace |
 | **Renovar Implementos** | Indústria |
 | **Emex Structures** | Indústria |
-| **BFX** | Serviços |
-| **Synapsia** | Tecnologia |
+| **BFX** | Indúsria |
+| **Synapsia** | Inteligência Artificial e Saúde |
+| **Tripa Rio** | Indústria |
+| **Mais de 50 clientes** | +15 Setores de auação |
 
 [Ver o portfólio completo →](https://www.mfactor.dev/showcase)
 
