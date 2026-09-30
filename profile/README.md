@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://www.mfactor.dev">
-  <img src="assets/banner.png" width="100%" alt="MFactor — Sua aliada tech do agora ao futuro. Tecnologia de alto padrão que transforma desafios em vantagem competitiva, do primeiro commit à infraestrutura em produção. Mais de 75.000 nós de infraestrutura gerenciados, suporte 100% dedicado e mais de 15 setores atendidos." />
+  <img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/banner.png" width="100%" alt="MFactor — Sua aliada tech do agora ao futuro. Tecnologia de alto padrão que transforma desafios em vantagem competitiva, do primeiro commit à infraestrutura em produção. Mais de 75.000 nós de infraestrutura gerenciados, suporte 100% dedicado e mais de 15 setores atendidos." />
 </a>
 
 <br />
@@ -27,7 +27,7 @@ De hospedagem e infraestrutura digital a marketing de performance, automações 
 
 Nosso compromisso é transformar desafios em oportunidades, conectando empresas às melhores ferramentas e estratégias para evoluírem com consistência e resultados reais.
 
-<img src="assets/pilares.png" width="100%" alt="Ecossistema completo: infra, dados, produto e marca sob o mesmo teto, sem repassar seu projeto entre fornecedores. Processo de engenharia: versionamento, revisão de código, observabilidade e entregas contínuas em toda operação. Resultado mensurável: cada entrega tem métrica — tempo economizado, custo reduzido, receita destravada." />
+<img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/pilares.png" width="100%" alt="Ecossistema completo: infra, dados, produto e marca sob o mesmo teto, sem repassar seu projeto entre fornecedores. Processo de engenharia: versionamento, revisão de código, observabilidade e entregas contínuas em toda operação. Resultado mensurável: cada entrega tem métrica — tempo economizado, custo reduzido, receita destravada." />
 
 <br />
 
@@ -36,11 +36,11 @@ Nosso compromisso é transformar desafios em oportunidades, conectando empresas 
 Soluções integradas para acelerar sua transformação digital — cada frente com especialistas próprios e um ponto de contato só.
 
 <p>
-  <a href="https://www.mfactor.dev/servicos/mlabs"><img src="assets/servico-mlabs.png" width="49%" alt="MLabs — Desenvolvimento de software: sistemas personalizados e licenciados sob medida, web e mobile, APIs e integrações." /></a>
-  <a href="https://www.mfactor.dev/servicos/mreach"><img src="assets/servico-mreach.png" width="49%" alt="MReach — E-commerce e presença digital: lojas completas, social commerce e sites comerciais com checkout e performance." /></a>
-  <a href="https://www.mfactor.dev/servicos/mhost"><img src="assets/servico-mhost.png" width="49%" alt="MHost — Infraestrutura cloud: Kubernetes, bancos de dados e observabilidade nas principais plataformas, com alta disponibilidade." /></a>
-  <a href="https://www.mfactor.dev/servicos/mai"><img src="assets/servico-mai.png" width="49%" alt="M-AI & ML — Inteligência artificial e machine learning: LLMs, agentes de IA, automações e análises preditivas integrados aos seus sistemas." /></a>
-  <a href="https://www.mfactor.dev/servicos/mpartner"><img src="assets/servico-mpartner.png" width="98.6%" alt="MPartner — White label para agências: sites e sistemas sob medida para revender com a própria marca, com prazo fechado e sigilo em contrato." /></a>
+  <a href="https://www.mfactor.dev/servicos/mlabs"><img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/servico-mlabs.png" width="49%" alt="MLabs — Desenvolvimento de software: sistemas personalizados e licenciados sob medida, web e mobile, APIs e integrações." /></a>
+  <a href="https://www.mfactor.dev/servicos/mreach"><img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/servico-mreach.png" width="49%" alt="MReach — E-commerce e presença digital: lojas completas, social commerce e sites comerciais com checkout e performance." /></a>
+  <a href="https://www.mfactor.dev/servicos/mhost"><img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/servico-mhost.png" width="49%" alt="MHost — Infraestrutura cloud: Kubernetes, bancos de dados e observabilidade nas principais plataformas, com alta disponibilidade." /></a>
+  <a href="https://www.mfactor.dev/servicos/mai"><img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/servico-mai.png" width="49%" alt="M-AI & ML — Inteligência artificial e machine learning: LLMs, agentes de IA, automações e análises preditivas integrados aos seus sistemas." /></a>
+  <a href="https://www.mfactor.dev/servicos/mpartner"><img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/servico-mpartner.png" width="98.6%" alt="MPartner — White label para agências: sites e sistemas sob medida para revender com a própria marca, com prazo fechado e sigilo em contrato." /></a>
 </p>
 
 | Frente | O que entregamos | Para quem |
@@ -55,7 +55,7 @@ Soluções integradas para acelerar sua transformação digital — cada frente 
 
 ## O que já está rodando
 
-<img src="assets/numeros.png" width="100%" alt="Em números: mais de 75.000 nós gerenciados em produção, mais de 15 setores atendidos do varejo à saúde, mais de 35.000 pessoas impactadas pelas plataformas e 100% de suporte dedicado, com time próprio e sem terceirização." />
+<img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/numeros.png" width="100%" alt="Em números: mais de 75.000 nós gerenciados em produção, mais de 15 setores atendidos do varejo à saúde, mais de 35.000 pessoas impactadas pelas plataformas e 100% de suporte dedicado, com time próprio e sem terceirização." />
 
 <br />
 
@@ -79,13 +79,13 @@ Clientes, projetos, orçamentos, ordens de serviço, equipe, materiais, estoque,
 
 Linguagens, frameworks, bancos de dados e infraestrutura cloud que usamos para construir produtos sólidos e escaláveis.
 
-<img src="assets/stack.png" width="100%" alt="Tech stack. Linguagens: Python, Java, Golang, PHP, C++, JavaScript e TypeScript. Frameworks: Next.js, React, React Native, Vue.js, Angular e Camunda. Bancos de dados: PostgreSQL, MySQL, SQLite, Cassandra, Prisma e Supabase. Cloud e infra: Kubernetes, Vercel, AWS, Azure e Google Cloud." />
+<img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/stack.png" width="100%" alt="Tech stack. Linguagens: Python, Java, Golang, PHP, C++, JavaScript e TypeScript. Frameworks: Next.js, React, React Native, Vue.js, Angular e Camunda. Bancos de dados: PostgreSQL, MySQL, SQLite, Cassandra, Prisma e Supabase. Cloud e infra: Kubernetes, Vercel, AWS, Azure e Google Cloud." />
 
 <br />
 
 ## Empresas que confiam na MFactor
 
-<img src="assets/clientes.png" width="100%" alt="Clientes: EezyCare, Primeiros Passos, Korin Agricultura, Emex, Chepa, Livin, BFX Peças Automotivas, VT Pay, Vupt, Auto-NF, Vendi+, Renovar, Synapsia e Tripa-Rio." />
+<img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/clientes.png" width="100%" alt="Clientes: EezyCare, Primeiros Passos, Korin Agricultura, Emex, Chepa, Livin, BFX Peças Automotivas, VT Pay, Vupt, Auto-NF, Vendi+, Renovar, Synapsia e Tripa-Rio." />
 
 Projetos entregues em saúde, varejo, agro, indústria e educação — plataformas, e-commerces e infraestrutura rodando em produção.
 
@@ -131,7 +131,7 @@ Aulas gratuitas de tecnologia para mulheres e mães empreendedoras que querem en
 <br />
 
 <a href="https://wa.me/5519971485856?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%20da%20MFactor.">
-  <img src="assets/contato.png" width="100%" alt="Contato: conte o desafio, respondemos com um diagnóstico técnico, não com um orçamento genérico. WhatsApp +55 (19) 97148-5856, e-mail alexandre.martins@mfactor.dev, site www.mfactor.dev, Leme, SP — Brasil." />
+  <img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/contato.png" width="100%" alt="Contato: conte o desafio, respondemos com um diagnóstico técnico, não com um orçamento genérico. WhatsApp +55 (19) 97148-5856, e-mail alexandre.martins@mfactor.dev, site www.mfactor.dev, Leme, SP — Brasil." />
 </a>
 
 <br />
