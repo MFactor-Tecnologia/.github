@@ -61,6 +61,10 @@ Soluções integradas para acelerar sua transformação digital — cada frente 
 
 ## Produto próprio: Service ERP MFactor
 
+<a href="https://service-erp.mfactor.dev">
+  <img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/og-service-erp.png" width="100%" alt="MFactor Services ERP — Gestão completa para quem presta, executa e administra obras. Tela inicial com cobranças, orçamentos aprovados, alerta de estoque e financeiro do mês, no computador e no celular." />
+</a>
+
 Plataforma criada para centralizar a operação de prestadores de serviços em um único sistema. Com foco especial na construção civil, atende também empresas de manutenção, reformas, instalações e serviços técnicos.
 
 Clientes, projetos, orçamentos, ordens de serviço, equipe, materiais, estoque, compras, pagamentos e financeiro trabalham de forma integrada. O cliente recebe o orçamento pelo celular, aprova, pede alterações e paga por Pix ou cartão, com a confirmação do pagamento acontecendo automaticamente.
@@ -76,6 +80,10 @@ Clientes, projetos, orçamentos, ordens de serviço, equipe, materiais, estoque,
 <br />
 
 ## Produto próprio: Oracle Advisor
+
+<a href="https://www.oracleadvisor.tech">
+  <img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/og-oracle-advisor.png" width="100%" alt="Oracle Advisor — Google Ads no piloto automático. O Oracle cria a campanha inteira a partir de uma frase sobre o seu negócio, mostra qual termo de pesquisa está queimando seu orçamento e otimiza seus anúncios todos os dias. Google Ads Partner." />
+</a>
 
 Plataforma que usa inteligência artificial para criar, acompanhar e otimizar campanhas do Google Ads. É Google Ads Partner e trabalha somente pela API oficial do Google, sem pedir senha e sem extensões de navegador.
 
