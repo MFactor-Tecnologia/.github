@@ -75,6 +75,22 @@ Clientes, projetos, orçamentos, ordens de serviço, equipe, materiais, estoque,
 
 <br />
 
+## Produto próprio: Oracle Advisor
+
+Plataforma que usa inteligência artificial para criar, acompanhar e otimizar campanhas do Google Ads. É Google Ads Partner e trabalha somente pela API oficial do Google, sem pedir senha e sem extensões de navegador.
+
+A partir de uma frase descrevendo o negócio, o Oracle monta a campanha inteira com grupos de anúncios, palavras-chave, negativas e anúncios. Depois de publicada, ele acompanha os resultados todos os dias, mostra quais termos de pesquisa estão gastando sem trazer retorno e mede, sete dias depois de cada alteração, se ela realmente melhorou a conta.
+
+- Criação de campanhas completas a partir de uma descrição simples
+- Otimização diária com três modos de operação: recomendações, aprovação manual ou piloto automático
+- Memória da conta que aprende com as palavras que você já bloqueou
+- Alertas quando uma campanha para, o saldo acaba ou uma página do site quebra
+- Histórico completo de alterações, todas registradas e reversíveis
+
+**Seu especialista em Google Ads, trabalhando todos os dias.** → [oracleadvisor.tech](https://www.oracleadvisor.tech)
+
+<br />
+
 ## As ferramentas que sustentam a entrega
 
 Linguagens, frameworks, bancos de dados e infraestrutura cloud que usamos para construir produtos sólidos e escaláveis.
