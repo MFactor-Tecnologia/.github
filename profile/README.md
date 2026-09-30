@@ -138,14 +138,6 @@ Projetos entregues em saúde, varejo, agro, indústria e educação — platafor
 
 <br />
 
-## Impacto social
-
-Aulas gratuitas de tecnologia para mulheres e mães empreendedoras que querem entrar no mercado. Turmas reduzidas, de 10 pessoas, com aulas ao vivo e gravadas.
-
-[Conhecer os cursos gratuitos →](https://www.mfactor.dev/curso)
-
-<br />
-
 <a href="https://wa.me/5519971485856?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%20da%20MFactor.">
   <img src="https://raw.githubusercontent.com/MFactor-Tecnologia/.github/master/profile/assets/contato.png" width="100%" alt="Contato: conte o desafio, respondemos com um diagnóstico técnico, não com um orçamento genérico. WhatsApp +55 (19) 97148-5856, e-mail alexandre.martins@mfactor.dev, site www.mfactor.dev, Leme, SP — Brasil." />
 </a>
