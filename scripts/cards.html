@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MFactor · imagens do README</title>
+    <!--
+      Fonte das imagens do README do perfil (assets/*.png).
+
+      Cada bloco com data-out vira um PNG com o mesmo nome. O visual reproduz
+      o site (www.mfactor.dev): mesma paleta vinho + terracota, Rajdhani nos
+      títulos, Inter no corpo, JetBrains Mono nas etiquetas, mesma grade de
+      fundo e os mesmos painéis com filete.
+
+      Edite AQUI e rode `npm run render` dentro de scripts/ — nunca edite os
+      PNGs gerados à mão.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Rajdhani:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #5b1a22;
+        --secondary: #45171c;
+        --accent: #c59587;
+        --primary: #a17368;
+        --fg: #f2f2f2;
+        --muted: #d1d1d1;
+        --hairline: rgba(255, 255, 255, 0.08);
+        /* Mesmo filtro das logos de clientes no site: qualquer marca vira terracota. */
+        --to-accent: brightness(0) saturate(100%) invert(79%) sepia(12%) saturate(942%)
+          hue-rotate(327deg) brightness(91%) contrast(87%);
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { background: transparent; }
+      body {
+        display: flex; flex-direction: column; align-items: flex-start; gap: 40px;
+        padding: 40px;
+        font-family: Inter, system-ui, sans-serif;
+        color: var(--fg);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* --- Painel base: fundo do hero do site ------------------------------ */
+      .card {
+        position: relative; overflow: hidden; isolation: isolate;
+        width: 1280px;
+        border-radius: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        background-color: var(--bg);
+        background-image:
+          linear-gradient(160deg, rgba(69,23,28,0.8) 0%, transparent 48%, rgba(69,23,28,0.35) 100%),
+          linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+        background-size: 100% 100%, 64px 64px, 64px 64px;
+      }
+      .glow { position: absolute; z-index: -1; border-radius: 9999px; filter: blur(90px); }
+      .glow-a { width: 620px; height: 620px; right: -120px; top: -220px; background: rgba(197,149,135,0.26); }
+      .glow-b { width: 520px; height: 520px; left: -200px; bottom: -260px; background: rgba(161,115,104,0.24); }
+
+      .grad {
+        background: linear-gradient(100deg, var(--accent) 0%, rgba(197,149,135,0.85) 45%, var(--primary) 100%);
+        -webkit-background-clip: text; background-clip: text; color: transparent;
+      }
+      .mono {
+        font-family: "JetBrains Mono", monospace;
+        text-transform: uppercase;
+      }
+      .dot { width: 8px; height: 8px; border-radius: 9999px; background: var(--accent); flex: none; }
+      .ibox {
+        display: grid; place-items: center; flex: none;
+        width: 52px; height: 52px; border-radius: 14px;
+        border: 1px solid rgba(197,149,135,0.25);
+        background: rgba(197,149,135,0.1);
+        color: var(--accent);
+      }
+      .ibox svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+      /* Grade de células com filetes compartilhados: painel, não cartões soltos */
+      .cells { display: grid; gap: 1px; background: rgba(255,255,255,0.07); }
+      .cells > * { background: rgba(91,26,34,0.72); }
+
+      /* --- Banner (hero) --------------------------------------------------- */
+      .banner .frame {
+        display: grid; grid-template-columns: 1fr 430px; align-items: center; gap: 24px;
+        padding: 64px 72px 64px;
+      }
+      .chip {
+        display: inline-flex; align-items: center; gap: 10px;
+        font-size: 15px; letter-spacing: 0.16em;
+        color: var(--accent);
+        border: 1px solid rgba(197,149,135,0.3);
+        background: rgba(197,149,135,0.1);
+        border-radius: 9999px; padding: 8px 18px;
+      }
+      .chip .dot { box-shadow: 0 0 0 5px rgba(197,149,135,0.18); }
+      .banner h1 {
+        margin-top: 26px;
+        font-family: Rajdhani, sans-serif; font-weight: 700;
+        font-size: 84px; line-height: 0.98; letter-spacing: -0.03em;
+      }
+      .banner h1 .grad { display: block; }
+      .banner .lead {
+        margin-top: 24px; max-width: 640px;
+        font-size: 23px; line-height: 1.45; color: var(--muted);
+      }
+      .caps { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 26px; list-style: none; }
+      .caps li {
+        display: flex; align-items: center; gap: 10px;
+        font-size: 13px; letter-spacing: 0.1em; color: var(--muted);
+      }
+      .caps .dot { width: 5px; height: 5px; }
+      .trust {
+        grid-template-columns: repeat(3, 1fr); margin-top: 38px; max-width: 640px;
+        border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; overflow: hidden;
+      }
+      .trust > div { padding: 18px 22px; }
+      .trust svg { width: 20px; height: 20px; fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .trust b {
+        display: block; margin-top: 8px;
+        font-family: Rajdhani, sans-serif; font-weight: 700; font-size: 32px; line-height: 1;
+        font-variant-numeric: tabular-nums;
+      }
+      .trust span { display: block; margin-top: 6px; font-size: 15px; color: var(--muted); }
+
+      .stage { position: relative; display: grid; place-items: center; height: 460px; }
+      .stage .halo {
+        position: absolute; width: 330px; height: 330px; border-radius: 9999px; filter: blur(50px);
+        background: radial-gradient(circle, rgba(197,149,135,0.32), transparent 68%);
+      }
+      .ring { position: absolute; border-radius: 9999px; border: 1px solid rgba(197,149,135,0.18); }
+      .ring-1 { width: 420px; height: 420px; }
+      .ring-2 { width: 330px; height: 330px; border-style: dashed; border-color: rgba(197,149,135,0.28); }
+      .stage img { position: relative; width: 210px; }
+
+      /* --- Pilares --------------------------------------------------------- */
+      .pillars .cells { grid-template-columns: repeat(3, 1fr); }
+      .pillars .cells > div { display: flex; gap: 20px; padding: 40px 36px; }
+      .pillars h3 { font-family: Rajdhani, sans-serif; font-weight: 700; font-size: 28px; line-height: 1.1; letter-spacing: -0.01em; }
+      .pillars p { margin-top: 10px; font-size: 19px; line-height: 1.5; color: var(--muted); }
+
+      /* --- Serviços -------------------------------------------------------- */
+      .svc { display: flex; flex-direction: column; width: 620px; padding: 46px 48px 44px; }
+      .svc.wide { width: 1280px; display: grid; grid-template-columns: 440px 1fr; column-gap: 56px; }
+      .svc .idx {
+        position: absolute; right: 44px; top: 44px;
+        font-size: 15px; color: rgba(209,209,209,0.45); font-variant-numeric: tabular-nums;
+      }
+      .svc .logo {
+        display: grid; place-items: center;
+        width: 84px; height: 84px; border-radius: 18px; padding: 14px;
+        border: 1px solid rgba(197,149,135,0.22); background: rgba(197,149,135,0.08);
+      }
+      .svc .logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+      .svc h3 {
+        margin-top: 28px;
+        font-family: Rajdhani, sans-serif; font-weight: 700; font-size: 44px; line-height: 1; letter-spacing: -0.02em;
+      }
+      .svc .sub { margin-top: 10px; font-size: 15px; letter-spacing: 0.12em; color: var(--accent); }
+      .svc .desc { margin-top: 22px; flex: 1; font-size: 20px; line-height: 1.6; color: var(--muted); }
+      .svc.wide .desc { margin-top: 0; flex: none; }
+      .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; list-style: none; }
+      .tags li {
+        border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05);
+        border-radius: 8px; padding: 7px 12px;
+        font-size: 13px; letter-spacing: 0.1em; color: var(--muted);
+      }
+      .more {
+        display: inline-flex; align-items: center; gap: 10px; margin-top: 30px;
+        font-weight: 600; font-size: 19px; color: var(--accent);
+      }
+      .more svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .svc.wide .left { display: flex; flex-direction: column; }
+      .svc.wide .right { display: flex; flex-direction: column; justify-content: center; padding: 6px 40px 0 0; }
+
+      /* --- Números --------------------------------------------------------- */
+      .stats .cells { grid-template-columns: repeat(4, 1fr); }
+      .stats .cells > div { position: relative; padding: 44px 40px 42px; }
+      .stats b {
+        display: block;
+        font-family: Rajdhani, sans-serif; font-weight: 700; font-size: 66px; line-height: 1;
+        color: var(--accent); font-variant-numeric: tabular-nums;
+      }
+      .stats strong { display: block; margin-top: 16px; font-size: 21px; font-weight: 600; }
+      .stats span { display: block; margin-top: 6px; font-size: 17px; line-height: 1.45; color: var(--muted); }
+      .stats .cells > div::after {
+        content: ""; position: absolute; left: 40px; right: 40px; bottom: 0; height: 2px;
+        background: linear-gradient(90deg, var(--accent), rgba(197,149,135,0));
+      }
+
+      /* --- Tech stack ------------------------------------------------------ */
+      .stack .cells > div { display: grid; grid-template-columns: 190px 1fr; align-items: center; gap: 24px; padding: 24px 40px; }
+      .stack .cat { display: flex; align-items: center; gap: 12px; font-size: 14px; letter-spacing: 0.16em; color: var(--accent); }
+      .stack .cat .dot { width: 6px; height: 6px; }
+      .stack ul { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; }
+      .stack li {
+        display: flex; align-items: center; gap: 12px;
+        padding: 10px 15px 10px 12px; border-radius: 12px;
+        border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.04);
+        font-size: 17px; font-weight: 500; color: var(--fg);
+      }
+      .stack li img { width: 24px; height: 24px; object-fit: contain; filter: var(--to-accent); }
+
+      /* --- Clientes -------------------------------------------------------- */
+      .clients .wall {
+        display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+        gap: 40px; padding: 56px 48px;
+      }
+      .clients .wall div { display: flex; align-items: center; justify-content: center; width: 130px; height: 72px; }
+      .clients img { max-width: 130px; max-height: 72px; object-fit: contain; opacity: 0.8; filter: var(--to-accent); }
+      .clients img.keep { filter: none; }
+      .clients img.tone { filter: grayscale(1) brightness(1.7) contrast(1.3) sepia(1) hue-rotate(-24deg) saturate(1.2); }
+
+      /* --- Contato --------------------------------------------------------- */
+      .contact .frame { display: grid; grid-template-columns: 1fr 470px; gap: 56px; align-items: center; padding: 64px 72px; }
+      .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; letter-spacing: 0.16em; color: var(--accent); }
+      .rule { display: block; width: 56px; height: 2px; margin-top: 18px; background: linear-gradient(90deg, var(--accent), rgba(197,149,135,0)); }
+      .contact h2 {
+        margin-top: 18px;
+        font-family: Rajdhani, sans-serif; font-weight: 700; font-size: 72px; line-height: 1; letter-spacing: -0.03em;
+      }
+      .contact p { margin-top: 20px; max-width: 560px; font-size: 22px; line-height: 1.5; color: var(--muted); }
+      .btn {
+        display: inline-flex; align-items: center; gap: 12px; margin-top: 34px;
+        padding: 18px 30px; border-radius: 14px;
+        background: linear-gradient(100deg, var(--accent), var(--primary));
+        color: #45171c; font-family: Rajdhani, sans-serif; font-weight: 700; font-size: 24px;
+        box-shadow: 0 0 0 1px rgba(197,149,135,0.22), 0 18px 50px -18px rgba(197,149,135,0.5);
+      }
+      .btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+      .contact .cells { border-radius: 18px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); }
+      .contact .cells > div { padding: 22px 26px; }
+      .contact .cells span { display: block; font-size: 13px; letter-spacing: 0.14em; color: var(--muted); }
+      .contact .cells b { display: block; margin-top: 8px; font-size: 21px; font-weight: 600; }
+      .signoff { display: flex; align-items: center; justify-content: space-between; padding: 22px 72px; border-top: 1px solid var(--hairline); font-size: 14px; letter-spacing: 0.12em; color: var(--muted); }
+      .signoff span { display: inline-flex; align-items: center; gap: 10px; }
+      .signoff .dot { width: 6px; height: 6px; }
+    </style>
+  </head>
+  <body>
+    <!-- 1. Banner: o hero do site ------------------------------------------ -->
+    <section class="card banner" data-out="banner">
+      <div class="glow glow-a"></div>
+      <div class="glow glow-b"></div>
+      <div class="frame">
+        <div>
+          <span class="chip mono"><span class="dot"></span>Engenharia · Cloud · IA</span>
+          <h1>Sua aliada tech<span class="grad">do agora ao futuro</span></h1>
+          <p class="lead">
+            Tecnologia de alto padrão que transforma desafios em vantagem competitiva —
+            do primeiro commit à infraestrutura em produção.
+          </p>
+          <ul class="caps mono">
+            <li><span class="dot"></span>Software sob medida</li>
+            <li><span class="dot"></span>E-commerce</li>
+            <li><span class="dot"></span>Cloud &amp; DevOps</li>
+            <li><span class="dot"></span>IA aplicada</li>
+          </ul>
+          <div class="cells trust">
+            <div><svg viewBox="0 0 24 24" data-icon="shield-check"></svg><b>+75.000</b><span>Infra gerenciada</span></div>
+            <div><svg viewBox="0 0 24 24" data-icon="gauge"></svg><b>100%</b><span>Suporte dedicado</span></div>
+            <div><svg viewBox="0 0 24 24" data-icon="boxes"></svg><b>+15</b><span>Setores atendidos</span></div>
+          </div>
+        </div>
+        <div class="stage">
+          <div class="halo"></div>
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <img src="brand/logo.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Pilares do "Quem somos" ----------------------------------------- -->
+    <section class="card pillars" data-out="pilares">
+      <div class="cells">
+        <div>
+          <span class="ibox"><svg viewBox="0 0 24 24" data-icon="layers"></svg></span>
+          <div>
+            <h3>Ecossistema completo</h3>
+            <p>Infra, dados, produto e marca sob o mesmo teto — sem repassar seu projeto entre fornecedores.</p>
+          </div>
+        </div>
+        <div>
+          <span class="ibox"><svg viewBox="0 0 24 24" data-icon="workflow"></svg></span>
+          <div>
+            <h3>Processo de engenharia</h3>
+            <p>Versionamento, revisão de código, observabilidade e entregas contínuas em toda operação.</p>
+          </div>
+        </div>
+        <div>
+          <span class="ibox"><svg viewBox="0 0 24 24" data-icon="trending-up"></svg></span>
+          <div>
+            <h3>Resultado mensurável</h3>
+            <p>Cada entrega tem métrica: tempo economizado, custo reduzido, receita destravada.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Frentes de atuação (preenchido pelo script) --------------------- -->
+    <div id="services" style="display: contents"></div>
+
+    <!-- 4. Números --------------------------------------------------------- -->
+    <section class="card stats" data-out="numeros">
+      <div class="cells">
+        <div><b>+75.000</b><strong>Nós gerenciados</strong><span>Infraestrutura em produção</span></div>
+        <div><b>+15</b><strong>Setores atendidos</strong><span>Do varejo à saúde</span></div>
+        <div><b>+35.000</b><strong>Pessoas impactadas</strong><span>Usuários das plataformas</span></div>
+        <div><b>100%</b><strong>Suporte dedicado</strong><span>Time próprio, sem terceirização</span></div>
+      </div>
+    </section>
+
+    <!-- 5. Tech stack (preenchido pelo script) ----------------------------- -->
+    <section class="card stack" data-out="stack">
+      <div class="cells" id="stack"></div>
+    </section>
+
+    <!-- 6. Clientes (preenchido pelo script) ------------------------------- -->
+    <section class="card clients" data-out="clientes">
+      <div class="glow glow-a"></div>
+      <div class="wall" id="clients"></div>
+    </section>
+
+    <!-- 7. Contato --------------------------------------------------------- -->
+    <section class="card contact" data-out="contato">
+      <div class="glow glow-a"></div>
+      <div class="glow glow-b"></div>
+      <div class="frame">
+        <div>
+          <span class="eyebrow mono">Contato</span>
+          <span class="rule"></span>
+          <h2>Vamos <span class="grad">conversar?</span></h2>
+          <p>Conte o desafio. Respondemos com um diagnóstico técnico, não com um orçamento genérico.</p>
+          <span class="btn">Comece agora <svg viewBox="0 0 24 24" data-icon="arrow-right"></svg></span>
+        </div>
+        <div class="cells">
+          <div><span class="mono">WhatsApp</span><b>+55 (19) 97148-5856</b></div>
+          <div><span class="mono">E-mail</span><b>alexandre.martins@mfactor.dev</b></div>
+          <div><span class="mono">Site</span><b>www.mfactor.dev</b></div>
+          <div><span class="mono">Localização</span><b>Leme, SP — Brasil</b></div>
+        </div>
+      </div>
+      <div class="signoff mono">
+        <span><span class="dot"></span>Sua aliada tech</span>
+        <span>Feito em Leme, SP</span>
+      </div>
+    </section>
+
+    <script>
+      // Ícones do lucide (mesma biblioteca do site), extraídos do lucide-react.
+      const ICONS = {
+        "layers": '<path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/>',
+        "workflow": '<rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/>',
+        "trending-up": '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',
+        "shield-check": '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
+        "gauge": '<path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/>',
+        "boxes": '<path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/><path d="m7 16.5-4.74-2.85"/><path d="m7 16.5 5-3"/><path d="M7 16.5v5.17"/><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/><path d="m17 16.5-5-3"/><path d="m17 16.5 4.74-2.85"/><path d="M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/><path d="M12 8 7.26 5.15"/><path d="m12 8 4.74-2.85"/><path d="M12 13.5V8"/>',
+        "arrow-right": '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
+      };
+
+      // Textos idênticos ao componente Services.tsx do site.
+      const SERVICES = [
+        {
+          slug: "mlabs", title: "MLabs", subtitle: "Desenvolvimento de Software",
+          description: "Sistemas personalizados e licenciados desenvolvidos sob medida para seu negócio. Soluções escaláveis que atendem uma ampla variedade de empreendimentos, desde startups até grandes corporações.",
+          tags: ["Web & Mobile", "APIs", "Integrações"],
+        },
+        {
+          slug: "mreach", title: "MReach", subtitle: "E-commerce & Presença Digital",
+          description: "Criamos e-commerces completos, lojas integradas em redes sociais e sites comerciais estratégicos. Transformamos sua ideia em uma presença digital que vende e engaja seu público.",
+          tags: ["Lojas", "Checkout", "Performance"],
+        },
+        {
+          slug: "mhost", title: "MHost", subtitle: "Infraestrutura Cloud",
+          description: "Solucionamos seus desafios de infraestrutura digital. Trabalhamos com as principais plataformas de Cloud e Banco de Dados, garantindo performance, segurança e alta disponibilidade, escalando conforme sua necessidade.",
+          tags: ["Kubernetes", "Bancos", "Observabilidade"],
+        },
+        {
+          slug: "mai", title: "M-AI & ML", subtitle: "Inteligência Artificial e Machine Learning",
+          description: "Integramos Inteligência Artificial, LLMs e Machine Learning aos sistemas e processos da sua empresa. Desenvolvemos assistentes inteligentes, agentes de IA, automações e análises preditivas que transformam dados em produtividade e vantagem competitiva.",
+          tags: ["LLMs", "Agentes", "Preditivo"],
+        },
+        {
+          slug: "mpartner", title: "MPartner", subtitle: "White Label para Agências",
+          description: "Desenvolvemos sites e sistemas sob medida em white label para agências, estúdios e freelancers revenderem com a própria marca. Prazo fechado antes de começar, etapas visíveis do briefing à entrega e sigilo em contrato.",
+          tags: ["Revenda", "Sem marca", "Prazo fechado"],
+          wide: true,
+        },
+      ];
+
+      // Mesma lista do TechStack.tsx, agrupada por categoria.
+      const SI = (slug) => `https://cdn.simpleicons.org/${slug}/ffffff`;
+      const DEVICON = (path) => `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${path}`;
+      const STACK = [
+        ["Linguagens", [
+          ["Python", SI("python")], ["Java", SI("openjdk")], ["Golang", SI("go")], ["PHP", SI("php")],
+          ["C++", SI("cplusplus")], ["JavaScript", SI("javascript")], ["TypeScript", SI("typescript")],
+        ]],
+        ["Frameworks", [
+          ["Next.js", SI("nextdotjs")], ["React", SI("react")], ["React Native", SI("react")],
+          ["Vue.js", SI("vuedotjs")], ["Angular", SI("angular")], ["Camunda", SI("camunda")],
+        ]],
+        ["Bancos de dados", [
+          ["PostgreSQL", SI("postgresql")], ["MySQL", SI("mysql")], ["SQLite", SI("sqlite")],
+          ["Cassandra", SI("apachecassandra")], ["Prisma", SI("prisma")], ["Supabase", SI("supabase")],
+        ]],
+        ["Cloud & Infra", [
+          ["Kubernetes", SI("kubernetes")], ["Vercel", SI("vercel")],
+          ["AWS", DEVICON("amazonwebservices/amazonwebservices-original-wordmark.svg")],
+          ["Azure", DEVICON("azure/azure-original.svg")],
+          ["Google Cloud", DEVICON("googlecloud/googlecloud-original.svg")],
+        ]],
+      ];
+
+      // Mesma ordem do Partners.tsx, mais os clientes que ainda não estão no site.
+      // O terceiro campo troca o tratamento da logo: "keep" preserva as cores
+      // originais, como no site; "tone" tinge sem perder o contraste interno,
+      // para logos em bloco que o filtro de silhueta transformaria num quadrado liso.
+      const CLIENTS = [
+        ["EezyCare", "eezycare"], ["Primeiros Passos", "primeiros-passos"], ["Korin Agricultura", "korin"],
+        ["Emex", "emex"], ["Chepa", "chepa"], ["Livin", "livin"], ["BFX Peças Automotivas", "bfx"],
+        ["VT Pay", "vt-pay"], ["Vupt", "vupt"], ["Auto-NF", "auto-nf", "keep"], ["Vendi+", "vendimais"],
+        ["Renovar", "renovar"], ["Synapsia", "synapsia"], ["Tripa-Rio", "tripario", "tone"],
+      ];
+
+      const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+      const arrow = `<svg viewBox="0 0 24 24" data-icon="arrow-right"></svg>`;
+
+      document.getElementById("services").outerHTML = SERVICES.map((s, i) => {
+        const head = `
+          <div class="logo"><img src="brand/services/${s.slug}.png" alt="" /></div>
+          <h3>${esc(s.title)}</h3>
+          <p class="sub mono">${esc(s.subtitle)}</p>`;
+        const tags = `<ul class="tags mono">${s.tags.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>`;
+        const more = `<span class="more">Ver página ${arrow}</span>`;
+        const idx = `<span class="idx mono">${String(i + 1).padStart(2, "0")}</span>`;
+        const desc = `<p class="desc">${esc(s.description)}</p>`;
+        return s.wide
+          ? `<article class="card svc wide" data-out="servico-${s.slug}">${idx}
+               <div class="left">${head}${more}</div>
+               <div class="right">${desc}${tags}</div>
+             </article>`
+          : `<article class="card svc half" data-out="servico-${s.slug}">${idx}${head}${desc}${tags}${more}</article>`;
+      }).join("");
+
+      document.getElementById("stack").innerHTML = STACK.map(([cat, items]) => `
+        <div>
+          <span class="cat mono"><span class="dot"></span>${esc(cat)}</span>
+          <ul>${items.map(([name, src]) => `<li><img src="${src}" alt="" />${esc(name)}</li>`).join("")}</ul>
+        </div>`).join("");
+
+      document.getElementById("clients").innerHTML = CLIENTS.map(([name, file, look]) =>
+        `<div><img src="brand/clients/${file}.png" alt="${esc(name)}"${look ? ` class="${look}"` : ""} /></div>`,
+      ).join("");
+
+      document.querySelectorAll("[data-icon]").forEach((svg) => {
+        svg.innerHTML = ICONS[svg.dataset.icon];
+      });
+
+      // Cartões lado a lado no README precisam da mesma altura. Mede só depois
+      // das fontes: com a fonte de fallback a altura sai errada.
+      window.ready = document.fonts.ready.then(() => {
+        const halves = [...document.querySelectorAll(".svc.half")];
+        const tallest = Math.max(...halves.map((el) => el.offsetHeight));
+        halves.forEach((el) => (el.style.height = `${tallest}px`));
+      });
+    </script>
+  </body>
+</html>
