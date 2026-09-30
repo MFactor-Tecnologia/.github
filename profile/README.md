@@ -91,7 +91,8 @@ Projetos entregues em saúde, varejo, agro, indústria e educação — platafor
 
 | Case | Setor |
 | :-- | :-- |
-| **EezyCare e EezyFamily** | Saúde — mais de 12 mil pessoas atendidas com o fluxo operacional automatizado |
+| **EezyCare** | Saúde — mais de 12 mil pessoas atendidas com o fluxo operacional automatizado |
+| **Primeiros Passos** | Educação |
 | **Chepa** | Varejo alimentar |
 | **Livin** | Marketplace |
 | **Renovar Implementos** | Indústria |
